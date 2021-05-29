@@ -1,0 +1,16 @@
+---
+enable: true
+topTitle: "-"
+title: >
+  ## Sobre mim
+
+  Conheca um pouco sobre mim e meu trabalho com a endocrinologia veterinária
+content: >
+  ### Mais de 25 anos de experiencia
+
+  Conheca um pouco sobre mim e meu trabalho com a endocrinologia veterinária
+button1Name: Cursos prestados
+button2Name: Localização
+button1Target: contato
+button2Target: contato
+image: images/about/about-img.jpg

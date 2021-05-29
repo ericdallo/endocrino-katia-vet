@@ -1,0 +1,75 @@
+baseURL = "https://endocrino.katia.vet/"
+languageCode = "pt-BR"
+paginate = 3
+theme = "portio-hugo"
+title = "Katia Mogioni | Endocrinologia veterinária"
+# Main Menu
+[[menu.main]]
+name = "Início"
+url = "#inicio"
+weight = 1
+[[menu.main]]
+name = "Sobre mim"
+url = "#sobre-mim"
+weight = 2
+[[menu.main]]
+name = "O que é a endocrinologia"
+url = "#endocrinologia"
+weight = 3
+[[menu.main]]
+name = "Contato"
+url = "#contato"
+weight = 4
+
+# Sitemap Menu
+[[menu.sitemap]]
+name = "Início"
+url = "#inicio"
+weight = 1
+[[menu.sitemap]]
+name = "Sobre mim"
+url = "sobre-mim"
+weight = 2
+[[menu.sitemap]]
+name = "O que é a endocrinologia?"
+url = "#o-que-e-a-endocrinologia"
+weight = 3
+[[menu.sitemap]]
+name = "Contato"
+url = "#contato"
+weight = 4
+
+[params]
+contactLink = "contato"
+copyright = "Todos direitors reservados © Katia Mogioni de Abreu 2021"
+footerLogo = "images/logo-alternative.png"
+formspreeURL = "https://formspree.io/f/mnqldvda"
+googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
+logo = "images/logo.png"
+
+[params.address]
+title = "Endereço"
+address = "São Paulo e Guarulhos (SP)"
+email = "endocrino@katia.vet"
+phone = "+(55) 11 97289 9833"
+
+[params.map]
+APIkey = "YOUR GOOGLE MAP API"
+latitude = "23.7783741"
+longitude = "90.3746808"
+pinImage = "images/pin.png"
+
+# Social icons
+[[params.social]]
+icon = "fa-facebook-official"
+url = "https://www.facebook.com/endocrinokatiavet/"
+weight = 1
+[[params.social]]
+icon = "fa-instagram"
+url = "https://www.instagram.com/endocrino_katia"
+weight = 2
+
+[params.help]
+id = "contato"
+title = "Alguma dúvida?"
+button = "Entre em contato"
