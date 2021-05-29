@@ -1,4 +1,4 @@
-baseURL = "https://endocrino.katia.vet/"
+baseURL = "https://ericdallo.github.io/endocrino-katia-vet/"
 languageCode = "pt-BR"
 paginate = 3
 theme = "portio-hugo"
