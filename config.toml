@@ -1,4 +1,4 @@
-baseURL = "https://ericdallo.github.io/endocrino-katia-vet/"
+baseURL = "https://endocrino.katia.vet/"
 languageCode = "pt-BR"
 paginate = 3
 theme = "portio-hugo"
@@ -71,5 +71,5 @@ weight = 2
 
 [params.help]
 id = "contato"
-title = "Alguma dúvida?"
+title = "Dúvidas?"
 button = "Entre em contato"
