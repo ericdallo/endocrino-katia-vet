@@ -1,7 +1,7 @@
 baseURL = "https://ericdallo.github.io/endocrino-katia-vet/"
 languageCode = "pt-BR"
 paginate = 3
-theme = "portio-hugo"
+# theme = "portio-hugo"
 title = "Katia Mogioni | Endocrinologia veterinária"
 # Main Menu
 [[menu.main]]
