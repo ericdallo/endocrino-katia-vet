@@ -86,14 +86,14 @@
 	</div>
 </section>
 <script src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.map.APIkey }}&libraries=geometry"></script>
-<script src="{{ "plugins/jQuery/jquery.min.js" | absURL }}"></script>
-<script src="{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}"></script>
-<script src="{{ "plugins/slick/slick.min.js" | absURL }}"></script>
-<script src="{{ "plugins/waypoint/jquery.waypoints.min.js" | absURL }}"></script>
-<script src="{{ "plugins/magnafic-popup/jquery.magnific-popup.min.js" | absURL }}"></script>
-<script src="{{ "plugins/tweenmax/TweenMax.min.js" | absURL }}"></script>
-<script src="{{ "plugins/imagesloaded/imagesloaded.min.js" | absURL }}"></script>
-<script src="{{ "plugins/masonry/masonry.min.js" | absURL }}"></script>
+<script src="{{ (resources.Get "js/jquery/jquery.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/bootstrap/bootstrap.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/slick/slick.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/waypoints/jquery.waypoints.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/magnific-popup/jquery.magnific-popup.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/tweenmax/TweenMax.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/imagesloaded/imagesloaded.pkgd.min.js").Permalink }}"></script>
+<script src="{{ (resources.Get "js/masonry-layout/masonry.pkgd.min.js").Permalink }}"></script>
 {{ $formhandler := resources.Get "js/form-handler.js" | minify }}
 <script src="{{ $formhandler.Permalink }}"></script>
 {{ $script := resources.Get "js/script.js" | minify }}

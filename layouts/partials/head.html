@@ -2,28 +2,22 @@
   <meta charset="utf-8" />
   <title>{{ .Title }}</title>
 
-  {{ "<!-- mobile responsive meta -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  {{ "<!-- Slick Carousel -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "plugins/slick/slick.css" | absURL }}" />
-  <link rel="stylesheet" href="{{ "plugins/slick/slick-theme.css" | absURL }}" />
-  {{ "<!-- Font Awesome -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ "plugins/font-awesome/css/font-awesome.min.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ (resources.Get "css/slick/slick.css" | minify).Permalink  }}" />
+  <link rel="stylesheet" href="{{ (resources.Get "css/slick/slick-theme.css" | minify).Permalink }}" />
 
-  {{ "<!-- Magnific Popup -->" | safeHTML }}
-  <link rel="stylesheet" href="{{"plugins/magnafic-popup/magnific-popup.css" | absURL }}" />
+  <link rel="stylesheet" href="{{ (resources.Get "css/fontawesome/all.min.css" | minify).Permalink }}" />
 
-  {{ "<!-- Stylesheets -->" | safeHTML }}
-  {{ $style := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
-  <link href="{{ $style.Permalink }}" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ (resources.Get "css/magnific-popup/magnific-popup.css" | minify).Permalink }}" />
 
-  {{ "<!--Favicon-->" | safeHTML }}
+  <link href="{{ (resources.Get "scss/style.scss" | resources.ToCSS | minify ).Permalink }}" rel="stylesheet" />
+
   <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
   <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
   {{ with site.Params.googleAnalytics }}
-  {{ "<!-- Google Analytics -->" | safeHTML }}
+
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
   <script>
     window.dataLayer = window.dataLayer || [];

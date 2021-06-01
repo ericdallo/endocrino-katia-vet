@@ -1,8 +1,69 @@
 baseURL = "https://ericdallo.github.io/endocrino-katia-vet/"
 languageCode = "pt-BR"
 paginate = 3
-# theme = "portio-hugo"
 title = "Katia Mogioni | Endocrinologia veterinária"
+
+[module]
+  [[module.mounts]]
+    source = "./assets"
+    target = "assets"
+
+  [[module.mounts]]
+    source = "./static"
+    target = "static"
+
+  [[module.mounts]]
+    source = "./node_modules/bootstrap/scss/"
+    target = "assets/scss/bootstrap"
+
+  [[module.mounts]]
+    source = "./node_modules/@fortawesome/fontawesome-free/css"
+    target = "assets/css/fontawesome"
+
+  [[module.mounts]]
+    source = "./node_modules/@fortawesome/fontawesome-free/webfonts"
+    target = "static/css/webfonts"
+
+  [[module.mounts]]
+    source = "./node_modules/jquery/dist"
+    target = "assets/js/jquery"
+
+  [[module.mounts]]
+    source = "./node_modules/bootstrap/dist/js"
+    target = "assets/js/bootstrap"
+
+  [[module.mounts]]
+    source = "./node_modules/imagesloaded"
+    target = "assets/js/imagesloaded"
+
+  [[module.mounts]]
+    source = "./node_modules/slick-carousel/slick"
+    target = "assets/js/slick"
+
+  [[module.mounts]]
+    source = "./node_modules/slick-carousel/slick"
+    target = "assets/css/slick"
+
+  [[module.mounts]]
+    source = "./node_modules/waypoints/lib"
+    target = "assets/js/waypoints"
+
+  [[module.mounts]]
+    source = "./node_modules/greensock/dist"
+    target = "assets/js/tweenmax"
+
+  [[module.mounts]]
+    source = "./node_modules/masonry-layout/dist"
+    target = "assets/js/masonry-layout"
+
+  [[module.mounts]]
+    source = "./node_modules/magnific-popup/dist"
+    target = "assets/js/magnific-popup"
+
+  [[module.mounts]]
+    source = "./node_modules/magnific-popup/dist"
+    target = "assets/css/magnific-popup"
+
 # Main Menu
 [[menu.main]]
 name = "Início"
