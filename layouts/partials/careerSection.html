@@ -1,0 +1,47 @@
+{{ with .Site.Data.careerSection }}
+<section class="section career" id="carreira">
+    <div class="career__background"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="career__heading">
+                    <div class="text-light">
+                        <h2 class="main-title">{{ .mainTitle }}</h2>
+                        {{ .subtitle | markdownify }}
+                    </div>
+
+                    <div class="btn-group nav mt-5">
+                        <a href="#{{.tab1Target}}" class="btn btn-primary active" data-toggle="tab">{{ .tab1Name }}</a>
+                        <a href="#{{.tab2Target}}" class="btn btn-primary" data-toggle="tab">{{ .tab2Name }}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="tab-content ">
+                    <div class="career__education tab-pane active" id="{{.tab1Target}}">
+                        {{ $Section := .education }}
+                        {{ range $Section }}
+                        <div class="career__education_item">
+                            <span class="pre-line text-primary"> {{ .time }} </span>
+                            {{ .content | markdownify }}
+                        </div>
+                        {{ end }}
+
+                    </div>
+
+                    <div class="career__education tab-pane" id="{{.tab2Target}}">
+                        {{ $Section := .experience }}
+                        {{ range $Section }}
+                        <div class="career__education_item">
+                            <span class="pre-line text-primary"> {{ .time }} </span>
+                            {{ .content | markdownify }}
+                        </div>
+                        {{ end }}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

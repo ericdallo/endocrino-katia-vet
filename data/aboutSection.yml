@@ -4,7 +4,7 @@ mainTitle: Sobre mim
 subtitle: Conheca um pouco sobre mim e meu trabalho com a endocrinologia veterinária
 bannerTitle: Experiência, carinho e dedicação
 content: >
-  Graduada em Medicina Veterinária pela Unifenas - Minas Gerais, trabalhei com clínica médica de pequenos animais por mais de 25 anos.
+  Meu nome é Katia Mogioni de Abreu e sou graduada em Medicina Veterinária pela Unifenas - Minas Gerais, trabalhei com clínica médica de pequenos animais por mais de 25 anos.
 
 
   Pós graduada em Endocrinologia e Metabologia de cães e gatos pela Anclivepa- SP. Membro da Associação Brasileira de Endocrinologia Veterinária.
@@ -12,6 +12,6 @@ content: >
 
   Meu atendimento prioriza o bem estar do pet e a satisfação do tutor, sempre com muito carinho e dedicação
 
-button1Name: Cursos prestados
-button1Target: contato
+button1Name: Experiência
+button1Target: "#experiencia"
 image: images/about/dog-field-2.jpg

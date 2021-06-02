@@ -22,7 +22,7 @@ $(document).ready(function () {
 
   // change-navigation-color
   $(window).scroll(function () {
-    if ($(document).scrollTop() > 200) {
+    if ($(document).scrollTop() > 100) {
       $(".navbar").addClass("nav__color__change");
     } else {
       $(".navbar").removeClass("nav__color__change");

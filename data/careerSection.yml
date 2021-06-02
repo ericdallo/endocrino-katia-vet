@@ -1,0 +1,46 @@
+---
+mainTitle: Carreira
+subtitle: >
+  Ao longo da minha carreira participei de varios cursos e tive muitas experiências como veterinária e endócrino.
+
+
+  Aqui estão os principais cursos e experiencias
+tab1Name: Cursos
+tab2Name: Experiência
+tab1Target: education
+tab2Target: experience
+
+education:
+  - content: >
+      ##### 5º Curso de Endocrinologia de cães e gatos
+
+      Endocrinovet
+    time: 11/2020
+  - content: >
+      ##### 1º Curso intensivo de alimentação caseira para Pets
+
+      Nutricarevet
+    time: 11/2020
+  - content: >
+      ##### Curso de nutrição e nutrologia de cães e gatos
+
+      Endocrinovet
+    time: 09/2020
+  - content: >
+      ##### Curso de emergências endócrinas
+
+      Endocrinovet
+    time: 05/2020
+
+
+experience:
+  - content: >
+      #### Hospital veterinário Arca 24h
+
+      Veterinária especialista endocrino. Guarulhos/SP
+    time: 2020-presente
+  - content: >
+      #### Clínica veterinária Dra. Katia Mogioni
+
+      Veterinária e dona de PetShop. Penha/SP
+    time: 1995-2021
