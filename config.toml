@@ -89,11 +89,11 @@ url = "#sobre-mim"
 weight = 2
 [[menu.sitemap]]
 name = "O que é a endocrinologia?"
-url = "#o-que-e-a-endocrinologia"
+url = "#endocrinologia"
 weight = 3
 [[menu.sitemap]]
 name = "Contato"
-url = "#contato"
+url = "contato"
 weight = 4
 
 [params]
