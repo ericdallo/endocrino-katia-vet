@@ -1,10 +1,7 @@
 ---
-enable: true
 topTitle: Katia Mogioni de Abreu
-content: >
-  ## Endocrinologia e Metabologia de cães e gatos
-
-  Com foco nas doenças hormonais como Diabetes, Obesidade, Dislipidemias, disfunções adrenal e tireoidianas, entre outras
+mainTitle: Endocrinologia e Metabologia de cães e gatos
+subtitle: "Com foco nas doenças hormonais como Diabetes, Obesidade, Dislipidemias, disfunções adrenal e tireoidianas, entre outras"
 buttonName: Entre em contato
-buttonURL: Contato
+buttonURL: contato
 image: images/hero/dog-field.jpg

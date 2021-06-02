@@ -77,10 +77,6 @@ weight = 2
 name = "O que é a endocrinologia"
 url = "#endocrinologia"
 weight = 3
-[[menu.main]]
-name = "Contato"
-url = "#contato"
-weight = 4
 
 # Sitemap Menu
 [[menu.sitemap]]
@@ -89,7 +85,7 @@ url = "#inicio"
 weight = 1
 [[menu.sitemap]]
 name = "Sobre mim"
-url = "sobre-mim"
+url = "#sobre-mim"
 weight = 2
 [[menu.sitemap]]
 name = "O que é a endocrinologia?"
@@ -113,12 +109,6 @@ title = "Endereço"
 address = "São Paulo e Guarulhos (SP)"
 email = "endocrino@katia.vet"
 phone = "+(55) 11 97289 9833"
-
-[params.map]
-APIkey = "YOUR GOOGLE MAP API"
-latitude = "23.7783741"
-longitude = "90.3746808"
-pinImage = "images/pin.png"
 
 # Social icons
 [[params.social]]

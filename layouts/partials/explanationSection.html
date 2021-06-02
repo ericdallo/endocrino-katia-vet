@@ -1,7 +1,6 @@
-{{ with .Site.Data.skillSection }}
-{{ if .enable }}
-<section id="{{ .id }}" class="section skill">
-    <div class="skill__background_shape">
+{{ with .Site.Data.explanationSection }}
+<section id="{{ .id }}" class="section explanation">
+    <div class="explanation__background_shape">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
             <defs>
                 <linearGradient id="d" x1="0.929" y1="0.111" x2="0.263" y2="0.935" gradientUnits="objectBoundingBox">
@@ -15,19 +14,19 @@
             </g>
         </svg>
     </div>
-    <div class="skill__background_pattern">
+    <div class="explanation__background_pattern">
         <img src="images/hero/figure-svg.svg" alt="background-shape">
     </div>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
-                <div class="skill__thumb">
-                    <div class="skill__thumb_pattern">
+                <div class="explanation__thumb">
+                    <div class="explanation__thumb_pattern">
                         <img src="images/hero/figure-svg.svg" alt="figure-svg">
                     </div>
-                    <div class="skill__thumb_image">
-                        <img src="{{ .image | absURL }}" alt="skill-img" style='
-                                        -webkit-mask: url({{"images/skill/skill-mask-svg.svg" | absURL}});
+                    <div class="explanation__thumb_image">
+                        <img src="{{ .image | absURL }}" alt="explanation-img" style='
+                                        -webkit-mask: url({{"images/explanation/explanation-mask-svg.svg" | absURL}});
                                         -webkit-mask-repeat: no-repeat;
                                         -webkit-mask-size: contain;
                                         -webkit-mask-position: center center;
@@ -36,14 +35,14 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="skill__progress">
-                    <div class="skill__progress_heading mb-5">
+                <div class="explanation__progress">
+                    <div class="explanation__progress_heading mb-5">
                         <span class="top-title pre-line">{{ .topTitle }}</span>
                         {{ .content | markdownify }}
                     </div>
-                    {{ $section := .skill }}
+                    {{ $section := .explanation }}
                     {{ range $section }}
-                    <div class="skill__progress_item">
+                    <div class="explanation__progress_item">
                         <span class="d-inline-block text-dark"> {{ .title }} </span>
                         <div class="progress-value float-right"><span>{{ .percent }}</span>%</div>
                         <div class="progress">
@@ -57,5 +56,4 @@
         </div>
     </div>
 </section>
-{{ end }}
 {{ end }}

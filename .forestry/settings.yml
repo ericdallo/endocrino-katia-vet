@@ -10,8 +10,8 @@ sections:
   path: data/aboutSection.yml
   label: Sobre
 - type: document
-  path: data/skillSection.yml
-  label: Skills
+  path: data/explanationSection.yml
+  label: Explanation
 - type: directory
   path: content/contato
   label: Contato

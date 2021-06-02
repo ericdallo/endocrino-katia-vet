@@ -35,6 +35,14 @@
       text-align: center;
       margin-bottom: 60px;
     }
+    .main-title {
+      font-size: 3em;
+
+      @include desktop {
+        font-size: 2em;
+      }
+
+    }
     .hero_blob {
       position: absolute;
       z-index: -1;

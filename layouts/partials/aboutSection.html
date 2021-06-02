@@ -1,12 +1,11 @@
 {{ with .Site.Data.aboutSection }}
-{{ if .enable }}
-<section class="section about" id="about">
+<section class="section about" id="sobre-mim">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-6 offset-lg-3">
                 <div class="about_header mb-5">
-                    <span class="top-title">{{ .topTitle }}</span>
-                    {{ .title | markdownify}}
+                    <h2 class="main-title">{{ .mainTitle  }}</h2>
+                    {{ .subtitle }}
                 </div>
             </div>
         </div>
@@ -40,13 +39,12 @@
                             </svg>
                         </div>
                         <div class="mb-4 text-light">
+                            <h3>{{ .bannerTitle }}</h3>
                             {{ .content | markdownify}}
                         </div>
                         <div>
                             <a class="btn btn-primary mr-3 btn-zoom"
                                 href="{{ .button1Target | absURL }}">{{ .button1Name }}</a>
-                            <a class="btn btn-outline-primary btn-zoom" href="{{ .button2Target | absURL }}">
-                                {{ .button2Name }} </a>
                         </div>
                     </div>
                 </div>
@@ -54,5 +52,4 @@
         </div>
     </div>
 </section>
-{{ end }}
 {{ end }}

@@ -1,5 +1,16 @@
 .about {
   overflow: hidden;
+
+  &_header {
+    .main-title {
+      font-size: 2em;
+
+      @include desktop {
+        font-size: 1.5em;
+      }
+    }
+  }
+
   &_content {
     display: flex;
     align-items: center;

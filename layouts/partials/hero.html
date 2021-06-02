@@ -1,5 +1,4 @@
 {{ with .Site.Data.hero }}
-{{ if .enable }}
 <section class="hero" id="home">
   <div class="hero_background-svg">
     <svg viewBox="0 0 1437 1180">
@@ -29,7 +28,8 @@
           </div>
           <div class="mb-5">
             <span class="top-title pre-line">{{ .topTitle }}</span>
-            {{ .content | markdownify }}
+            <h1 class="main-title">{{ .mainTitle }}</h1>
+            {{ .subtitle }}
           </div>
           <a type="button" class="btn btn-lg btn-primary btn-zoom"
             href="{{ .buttonURL | absURL }}">{{ .buttonName }}</a>
@@ -66,5 +66,4 @@
     </div>
   </div>
 </section>
-{{ end }}
 {{ end }}
