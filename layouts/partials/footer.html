@@ -39,7 +39,7 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="text-light footer__widget_sitemap mb-5">
-					<h4 class="base-font">Mapa do site</h4>
+					<h4>Mapa do site</h4>
 					<ul class="unstyle-list small">
 						{{ $sitemap := .Site.Menus.sitemap }}
 						{{ range $sitemap }}
@@ -51,7 +51,7 @@
 			<div class="col-lg-4">
 				<div class="text-light footer__widget_address mb-5">
 					{{ $address := .Site.Params.address }}
-					<h4 class="base-font">{{ $address.title }}</h4>
+					<h4>{{ $address.title }}</h4>
 					<ul class="fa-ul small">
 						<li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
 										class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
