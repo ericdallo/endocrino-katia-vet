@@ -1,0 +1,17 @@
+{
+  "short_name": "Endocrinologia veterinária Katia Mogioni",
+  "name": "Endocrinologia veterinária - Katia Mogioni de Abreu",
+  "icons": [
+    {
+      "src": "/images/logo-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#6AB04C",
+  "description": "Endocrinologia e metabologia de cães e gatos - Katia Mogioni de Abreu, com foco nas doenças hormonais como Diabetes, Obesidade, Dislipidemias, entre outras"
+}
