@@ -1,21 +1,13 @@
-<head>
+<head itemscope itemtype="{{ .Site.BaseURL }}">
   <meta charset="utf-8" />
-  <title>{{ .Title }}</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <link rel="stylesheet" href="{{ (resources.Get "css/slick/slick.css" | minify).Permalink  }}" />
-  <link rel="stylesheet" href="{{ (resources.Get "css/slick/slick-theme.css" | minify).Permalink }}" />
+  {{ partial "meta" . }}
 
-  <link rel="stylesheet" href="{{ (resources.Get "css/fontawesome/all.min.css" | minify).Permalink }}" />
+  {{ partial "links" . }}
 
-  <link rel="stylesheet" href="{{ (resources.Get "css/magnific-popup/magnific-popup.css" | minify).Permalink }}" />
-
-  <link href="{{ (resources.Get "scss/style.scss" | resources.ToCSS | minify ).Permalink }}" rel="stylesheet" />
-
-  <link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
-  <link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />
   {{ with site.Params.googleAnalytics }}
 
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>

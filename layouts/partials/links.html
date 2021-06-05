@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="{{ (resources.Get "css/slick/slick.css" | minify).Permalink  }}" />
+<link rel="stylesheet" href="{{ (resources.Get "css/slick/slick-theme.css" | minify).Permalink }}" />
+
+<link rel="stylesheet" href="{{ (resources.Get "css/fontawesome/all.min.css" | minify).Permalink }}" />
+
+<link rel="stylesheet" href="{{ (resources.Get "css/magnific-popup/magnific-popup.css" | minify).Permalink }}" />
+
+<link href="{{ (resources.Get "scss/style.scss" | resources.ToCSS | minify ).Permalink }}" rel="stylesheet" />
+
+<link rel="shortcut icon" href="{{ "images/favicon.ico" | absURL }}" type="image/x-icon" />
+<link rel="icon" href="{{ "images/favicon.png" | absURL }}" type="image/x-icon" />

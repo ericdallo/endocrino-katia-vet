@@ -1,7 +1,13 @@
 baseURL = "https://endocrino.katia.vet/"
+title = "Endocrinologia veterinária - Katia Mogioni de Abreu"
 languageCode = "pt-BR"
+DefaultContentLanguage = "pt"
 paginate = 3
-title = "Katia Mogioni | Endocrinologia veterinária"
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
 
 [module]
   [[module.mounts]]
@@ -105,12 +111,14 @@ url = "contato"
 weight = 5
 
 [params]
+seoDescription = "Cães e gatos também podem apresentar doenças que afetam as glândulas produtoras de hormônios, assim como os seres humanos. O sistema endócrino é responsável pelos hormônios que são usados para controlar várias funções em todo o corpo e variam desde o controle da temperatura corporal e o nível de apetite do seu animal de estimação … Endocrinologia Veterinária Leia mais »"
 contactLink = "contato"
 copyright = "Todos direitors reservados © Katia Mogioni de Abreu 2021"
 footerLogo = "images/logo-alternative.png"
 formspreeURL = "https://formspree.io/f/mnqldvda"
 googleAnalytics = "YOUR GOOGLE ANALYTICS CODE"
 logo = "images/logo.png"
+ogImage = "images/dog-field-banner.jpg"
 
 [params.address]
 title = "Endereço"

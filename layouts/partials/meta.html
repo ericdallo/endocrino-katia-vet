@@ -1,0 +1,83 @@
+{{ if .IsHome }}
+  <title itemprop="name">{{ .Title }}</title>
+  <meta property="og:title" content="{{ .Title }}" />
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta itemprop="name" content="{{ .Title }}" />
+  <meta name="application-name" content="{{ .Title }}" />
+  <meta property="og:site_name" content="{{ .Title }}" />
+
+  <meta name="description" content="{{ .Site.Params.seoDescription }}" />
+  <meta itemprop="description" content="{{ .Site.Params.seoDescription }}" />
+  <meta property="og:description" content="{{ .Site.Params.seoDescription }}" />
+  <meta name="twitter:description" content="{{ .Site.Params.seoDescription }}" />
+{{ else }}
+  {{ if .Params.seoTitle }}
+    <title itemprop="name">{{ .Params.seoTitle }}</title>
+    <meta property="og:title" content="{{ .Params.seoTitle }}" />
+    <meta name="twitter:title" content="{{ .Params.seoTitle }}" />
+    <meta itemprop="name" content="{{ .Params.seoTitle }}" />
+    <meta name="application-name" content="{{ .Params.seoTitle }}" />
+    <meta property="og:site_name" content="{{ .Params.seoTitle }}" />
+
+  {{ else }}
+    <title itemprop="name">{{ .Title }}</title>
+    <meta property="og:title" content="{{ .Title }}" />
+    <meta name="twitter:title" content="{{ .Title }}" />
+    <meta itemprop="name" content="{{ .Title }}" />
+    <meta name="application-name" content="{{ .Title }}" />
+    <meta property="og:site_name" content="{{ .Title }}" />
+
+  {{ end }}
+  <meta name="description" content="{{ .Params.seoDescription }}" />
+  <meta itemprop="description" content="{{ .Params.seoDescription }}" />
+  <meta property="og:description" content="{{ .Params.seoDescription }}" />
+  <meta name="twitter:description" content="{{ .Params.seoDescription }}" />
+{{ end}}
+
+<!-- Links -->
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}" itemprop="url" />
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+
+<!-- Language -->
+<meta property="og:locale" content="pt-BR">
+<meta name="language" content="Português">
+
+{{ with .Params.image }}
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" />
+{{ else }}
+  <meta itemprop="image" content="{{ .Site.Params.ogImage | absURL }}" />
+  <meta property="og:image" content="{{ .Site.Params.ogImage | absURL }}" />
+  <meta name="twitter:image" content="{{ .Site.Params.ogImage | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Site.Params.ogImage | absURL }}" />
+{{ end }}
+
+<!-- Search Engine Crawler Tags -->
+<meta name="robots" content="index,follow" />
+<meta name="googlebot" content="index,follow" />
+
+<!-- Social Tags -->
+<meta property="fb:admins" content="endocrinokatiavet" />
+
+<!-- Manifest File -->
+<link rel="manifest" href="{{ .Site.BaseURL }}manifest.json" />
+
+<!-- Theme Color -->
+<meta name="theme-color" content="#6AB04C" />
+<meta name="msapplication-TileColor" content="#6AB04C" />
+
+<meta name="keywords" content="endocrinologia veterinaria, cães, gatos, diabetes, endocrinologista veterinario, hiperadrenocorticismo, cushing, hipertireoidismo, hipotireoidismo, obesidade" />
+<meta name="imagemode" content="force" />
+<meta name="coverage" content="Worldwide" />
+<meta name="distribution" content="Global" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Params.sitename }}" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-touch-fullscreen" content="yes" />
