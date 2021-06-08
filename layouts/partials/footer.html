@@ -53,12 +53,26 @@
 					{{ $address := .Site.Params.address }}
 					<h4>{{ $address.title }}</h4>
 					<ul class="fa-ul small">
-						<li class="mb-2"><a class="text-light" href="tel:{{ $address.phone }}"><span class="fa-li"><i
-										class="fa fa-phone"></i></span>{{ $address.phone }}</a></li>
-						<li class="mb-2"><a class="text-light" href="mailto:{{ $address.email }}"><span class="fa-li"><i
-										class="fa fa-envelope"></i></span>{{ $address.email }}</a></li>
 						<li class="mb-2">
-							<span class="fa-li"><i class="fa fa-map-marker"></i></span>{{ $address.address }}</a>
+							<a class="text-light" href="https://api.whatsapp.com/send?phone={{ $address.phoneRaw }}">
+								<span class="fa-li"><i class="bi bi-whatsapp"></i></span>{{ $address.phone }}
+							</a>
+						</li>
+						{{ $social := .Site.Params.social }}
+						{{ range $social }}
+						<li class="mb-2">
+							<a class="text-light" href="{{ .url }}">
+								<span class="fa-li"><i class="bi {{ .icon }}"></i></span>{{ .name }}
+							</a>
+						</li>
+						{{ end }}
+						<li class="mb-2">
+							<a class="text-light" href="mailto:{{ $address.email }}">
+								<span class="fa-li"> <i class="fa fa-envelope"></i></span>{{ $address.email }}
+							</a>
+						</li>
+						<li class="mb-2">
+							<span class="fa-li"><i class="fa fa-map-marker"></i></span>{{ $address.address }}
 						</li>
 					</ul>
 				</div>
@@ -68,18 +82,6 @@
 			<div class="col-lg-6">
 				<div class="footer__footer_copy text-light">
 					<p>{{ .Site.Params.copyright }}</p>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="footer__footer_social">
-					<ul class="unstyle-list">
-						{{ $social := .Site.Params.social }}
-						{{ range $social }}
-						<li class="d-inline-block mx-2"><a class="text-light" target="_blank" href="{{ .url }}"><i
-									class="fa {{ .icon }}"></i></a>
-						</li>
-						{{ end }}
-					</ul>
 				</div>
 			</div>
 		</div>

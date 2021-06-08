@@ -69,7 +69,7 @@
             </div>
           </div>
           <h4>{{ .Params.phoneTitle }}</h4>
-          <p>{{ $address.phone }}</p>
+          <p><a href="https://api.whatsapp.com/send?phone={{ $address.phoneRaw }}">{{ $address.phone }}</a></p>
         </div>
       </div>
       <div class="col-lg-4">

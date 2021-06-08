@@ -23,6 +23,18 @@ canonifyURLs = true
     target = "assets/scss/bootstrap"
 
   [[module.mounts]]
+    source = "./node_modules/bootstrap-icons/font/"
+    target = "assets/css/bootstrap-icons"
+
+  [[module.mounts]]
+    source = "./node_modules/bootstrap-icons/font/"
+    target = "assets/css/bootstrap-icons"
+
+  [[module.mounts]]
+    source = "./node_modules/bootstrap-icons/font/fonts"
+    target = "static/css/bootstrap-icons/fonts"
+
+  [[module.mounts]]
     source = "./node_modules/@fortawesome/fontawesome-free/css"
     target = "assets/css/fontawesome"
 
@@ -102,7 +114,7 @@ name = "Carreira"
 url = "#carreira"
 weight = 3
 [[menu.sitemap]]
-name = "O que é a endocrinologia?"
+name = "O que é a endocrinologia"
 url = "#endocrinologia"
 weight = 4
 [[menu.sitemap]]
@@ -121,18 +133,21 @@ logo = "images/logo.png"
 ogImage = "images/dog-field-banner.jpg"
 
 [params.address]
-title = "Endereço"
-address = "São Paulo e Guarulhos (SP)"
+title = "Contato"
+address = "São Paulo e Guarulhos"
 email = "endocrino@katia.vet"
 phone = "+(55) 11 97289 9833"
+phoneRaw = "5511972899833"
 
 # Social icons
 [[params.social]]
-icon = "fa-facebook-official"
+icon = "bi-facebook"
+name = "endocrinokatiavet"
 url = "https://www.facebook.com/endocrinokatiavet/"
 weight = 1
 [[params.social]]
-icon = "fa-instagram"
+icon = "bi-instagram"
+name = "@endocrino_katia"
 url = "https://www.instagram.com/endocrino_katia"
 weight = 2
 
