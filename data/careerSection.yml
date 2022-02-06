@@ -4,12 +4,17 @@ subtitle: >
   Ao longo da minha carreira participei de vários cursos e tive muitas experiências como veterinária e endócrino.
 
 
-tab1Name: Experiência
+tab1Name: Locais de atendimento
 tab2Name: Cursos
 tab1Target: experience
 tab2Target: education
 
 experience:
+  - content: >
+      #### Atendimento domiciliar
+
+      Endocrinologia - São Paulo e Guarulhos
+    time: 2020-presente
   - content: >
       #### Empório dos bichos
 
