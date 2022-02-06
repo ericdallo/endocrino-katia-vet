@@ -12,6 +12,6 @@ content: >
 
   Meu atendimento prioriza o bem estar do pet e a satisfação do tutor, sempre com muito carinho e dedicação
 
-button1Name: Experiência
-button1Target: "#experiencia"
+button1Name: Locais de atendimento
+button1Target: "#experience"
 image: images/about/profile.jpg
